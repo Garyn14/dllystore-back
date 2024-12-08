@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dellystore
+    username: ${DB_USERNAME_POSTGRESQL}
+    password: ${DB_PASSWORD_POSTGRESQL}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
